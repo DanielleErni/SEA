@@ -1,1 +1,48 @@
-http://localhost:5041
+
+
+GET http://localhost:5041
+
+###
+
+
+
+//for getting all the data
+GET http://localhost:5041/order/
+
+
+###
+
+//for getting specific data 
+GET http://localhost:5041/order/4
+
+
+
+###
+
+//for creating data
+POST http://localhost:5041/order
+Content-Type: application/json
+
+{
+    "CustomerName": "Sean",
+    "Quantity": 2,
+    "OrderName": "Fried Chicken",
+    "Price": 100.00
+}
+
+
+###
+
+
+
+//for upating data
+PUT http://localhost:5041/order/1
+Content-Type: application/json
+
+
+
+
+###
+
+//for deleting data
+DELETE http://localhost:5041/orders/1

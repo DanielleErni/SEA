@@ -1,8 +1,7 @@
 ﻿namespace SeamenResto.Api.Dto;
 
-public record class OrderDto
+public record class CreateOrderDto
 (
-    int Id,
     string CustomerName,
     int Quantity,
     string OrderName,
